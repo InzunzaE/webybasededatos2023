@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego </title>
+    <link rel="icon" href="dadosicono.jpg">
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tu archivo de JavaScript -->
+    <script src="code.jquery.com_jquery-3.7.1.js"></script>
+    <script src="juego.js"></script>
+    
+    <style>
+        body {
+            background-image: url("fondo.png"); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Fija la imagen en su lugar mientras se desplaza la página */
+        }
+
+        /* Clase para el fondo del encabezado y el número */
+        .background-element {
+            background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
+            padding: 30px; /* Espaciado interior */
+            border-radius: 10px; /* Bordes redondeados */
+            color: white; /* Color del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h3 class="text-center background-element">Juego de Dados by: Inzunza Eitan y Chavez Adrián</h3>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <button class="btn btn-primary btn-lg" id="boton">Tirar el dado</button>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="imagenes/dado.png" alt="Dado" id="dado" class="img-fluid">
+            </div>
+            <div class="col-md-4 text-center"></div>
+            <h1 class="background-element" >El ganador fue el jugador: <span id="winner"></span></h1>
+            <div class="col-md text-center">
+                
+                <!-- Aplicando la misma clase al elemento con id="numero" -->
+                <h2  class="background-element"> Sacaste un:<span id="numero"> 0 </span></h2>
+            </div>
+            <div class="col-md-4 text-center"></div>
+            <h4 id="punto1" class="background-element">Los puntos del jugador 1 es de: <span id="pts1">0</span></h4>
+            <h4 id="punto2" class="background-element">Los puntos del jugador 2 es de: <span id="pts2">0</span></h4>
+        </div>
+    </div>
+    
+    <!-- Incluye los archivos de jQuery y Bootstrap JavaScript al final del cuerpo del documento -->
+
+</body>
+</html>
