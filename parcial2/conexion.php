@@ -1,10 +1,13 @@
-<?php  
-    $server = "localhost";
-    $user = "root";
-    $password = "";
+<?php
 
-    $conexion = new mysqli($server, $user, $password);
+$server = "localhost";
+$user = "root";
+$pasword = "";
+$basededatos ="cetis107"; 
 
-    if($conexion->connect_error){
-        die("Falló la conexion" . $conexion->connect_error); 
-    }
+$conexion = new mysqli($server, $user, $pasword, $basededatos);
+
+if($conexion->connect_error){
+    die("Fallo la conexion " . $conexion->connect_error);
+}
+?>
