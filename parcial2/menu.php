@@ -20,7 +20,7 @@
             <li><a class="dropdown-item" href="inicio.php">inicio</a></li>
             <li><a class="dropdown-item" href="consultarAlumnos.php">Consultar alumnos</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="RegistrarAlumno.php">Registrar alumno</a></li>
           </ul>
         </li>
         <li class="nav-item">
