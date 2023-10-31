@@ -46,8 +46,8 @@
                                     <td><?php echo $registro["turno"]; ?></td>
                                     <td><?php echo $registro["sexo"]; ?></td>
                                     <td>
-                                        <a href="" class="btn btn-primary">Editar</a>
-                                        <a href="" class="btn btn-danger">Borrar</a>
+                                        <a href="editarAlumno.php?id=<?php echo $registro ["id"]; ?>" class="btn btn-sm btn-primary">Editar</a>
+                                        <a href="eliminarAlumno.php?id=<?php echo $registro["id"]; ?>" class="btn btn-sm btn-danger">Borrar</a>
                                     </td>
                                 </tr>
                             <?php } ?>
@@ -55,7 +55,7 @@
                     </table> 
                     </div>
                <?php } else { ?>
-                <h2> no existe datos</h2>
+                <h2 class="m-4"> no existe datos</h2>
                <?php } ?>
             </div>
         </div>
