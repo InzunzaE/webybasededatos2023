@@ -29,7 +29,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="inicio.php">inicio</a></li>
-            <li><a class="dropdown-item" href="consultarMaterias.php">Consultar materias</a></li>
+            <li><a class="dropdown-item" href="ConsultarMateria.php">Consultar materias</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="RegistrarMaterias.php">Registrar materias</a></li>
           </ul>
