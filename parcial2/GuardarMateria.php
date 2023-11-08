@@ -9,7 +9,7 @@
     $sql= "INSERT INTO materias(nombre,semestre,especialidad) VALUES ('".$nombre."',".$semestre.",'".$especialidad."')";
 
     if($conexion->query($sql) === TRUE){
-        header("Location: ConsultarMaterias.php");
+        header("Location: ConsultarMateria.php");
         $conexion->close();
         exit;
     } else {
