@@ -10,7 +10,7 @@
 <body>
     <?php 
         include 'menu.php';
-        include 'conexion2.php';
+        include 'conexion.php';
 
         $sql = "SELECT * FROM materias";
         $datos = $conexion->query($sql);
@@ -38,8 +38,8 @@
                                         <td><?php echo $registro["semestre"]; ?></td>
                                         <td><?php echo $registro["especialidad"]; ?></td>
                                         <td>
-                                            <a href="" class="btn btn-xs btn-primary">Editar</a>
-                                            <a href="" class="btn btn-xs btn-danger">Eliminar</a>
+                                            <a href="editarMateria.php" class="btn btn-xs btn-primary">Editar</a>
+                                            <a href="EliminarMateria.php?id=<?php echo $registro["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
                                         </td>
                                     </tr>
                                 <?php }?>
