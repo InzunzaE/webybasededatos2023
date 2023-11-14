@@ -1,6 +1,6 @@
 <?php
 
-    include 'conexion2.php';
+    include 'conexion.php';
     $id = $_POST["id"];
     $nombre = $_POST["nombre"];
     $numero_control = $_POST["nc"];
